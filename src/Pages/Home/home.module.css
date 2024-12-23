@@ -1,0 +1,11 @@
+.homeBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px - 60px);
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border: 1px solid black;
+
+}

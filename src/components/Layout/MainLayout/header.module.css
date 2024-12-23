@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display:MORF@0..60&display=swap');
+
+
+.header {
+    padding: 0px 50px;
+    background: #1fb59a97;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    height: 60px;
+}
+
+
+.logoBox img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.headerTitle {
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    color: rgb(65, 10, 61);
+    font-family: "Agu Display", serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
