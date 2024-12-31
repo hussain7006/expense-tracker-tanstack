@@ -6,7 +6,8 @@
     background: #1fb59a97;
     display: flex;
     align-items: center;
-    gap: 50px;
+    /* gap: 50px; */
+    justify-content: space-between;
     height: 60px;
 }
 
@@ -26,4 +27,15 @@
     font-family: "Agu Display", serif;
     font-weight: 900;
     font-size: 1.5rem;
+}
+
+.headerLeftContent {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.themeRightContent {
+    display: flex;
+    align-items: center;
 }
