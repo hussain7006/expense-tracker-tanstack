@@ -60,28 +60,32 @@ const data = [
 
 const ReBarChart = () => {
     return (
-        <ResponsiveContainer width="50%" height="85%">
-            <span className='ml-2 font-bold text-[#02715c] underline'>Daily Expenses</span>
-            <BarChart
-                width={500}
-                height={300}
-                data={data}
-                margin={{
-                    top: 5,
-                    right: 30,
-                    left: 20,
-                    bottom: 5,
-                }}
-            >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="name" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <Bar dataKey="pv" fill="#8884d8" activeBar={<Rectangle fill="pink" stroke="blue" />} />
-                <Bar dataKey="uv" fill="#82ca9d" activeBar={<Rectangle fill="gold" stroke="purple" />} />
-            </BarChart>
-        </ResponsiveContainer>
+        <div className='w-1/2 h-full flex justify-center flex-col gap-3'>
+            <span className='text-black dark:text-white font-bold underline ml-8 text-xl'>Monthly Expenses</span>
+
+            <ResponsiveContainer width="100%" height="85%" className={'flex flex-col relative mb-2'} >
+                {/* <span className='absolute top-[-25px] font-bold text-[#02715c] underline'>Daily Expenses</span> */}
+                <BarChart
+                    width={500}
+                    height={300}
+                    data={data}
+                    margin={{
+                        top: 5,
+                        right: 30,
+                        left: 20,
+                        bottom: 5,
+                    }}
+                >
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="name" />
+                    <YAxis />
+                    <Tooltip />
+                    <Legend />
+                    <Bar dataKey="pv" fill="#8884d8" activeBar={<Rectangle fill="pink" stroke="blue" />} />
+                    <Bar dataKey="uv" fill="#82ca9d" activeBar={<Rectangle fill="gold" stroke="purple" />} />
+                </BarChart>
+            </ResponsiveContainer>
+        </div>
     );
 };
 
