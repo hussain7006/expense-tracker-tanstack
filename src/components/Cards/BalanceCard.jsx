@@ -74,7 +74,7 @@ export default function BalanceCard() {
                     >
                     </CountUp>
                 </div>
-                <div className="stat-desc text-green-600 font-bold">Manage where your money goes</div>
+                <div className="stat-desc text-green-600 font-bold">See what’s left to grow</div>
             </div>
         </div>
     )

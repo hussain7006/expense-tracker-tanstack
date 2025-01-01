@@ -13,6 +13,7 @@ export default function Home() {
                     <div className="h-full w-2/3 flex justify-center items-center ">
                         <BalanceCard />
                     </div>
+
                     <div className="overflow-x-auto h-full rounded-lg px-4 py-1 shadow-lg hover:shadow-xl bg-[#F0FDF4] dark:bg-[#272D3B] w-1/3 flex flex-col gap-2">
 
                         <ExpenseHistoryTable />
